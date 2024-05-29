@@ -4,10 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main_wrapper">
-        <input type="text" placeholder="MM-DD-YYYY" required><span>Enter your date of birth</span>
+        <h2 class="heading">Age Calculator</h2>
+        <h4>Select Your Date of Birth</h4>
+
+        <input type="date" class="userInput" id="userdob" required><br><br>
+
+        <p id="warning"></p>
+
+        <button type="button" class="btn" onclick="findUserAge()">Enter</button>
+
+        <p id="para"></p>
+        <p id="para2"></p>
+        <p class="link">@Design by <a href="https://www.linkedin.com/in/usama-israr-khan-3b68312ab/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BHjJAxKatTPGsVm2ZSgCIvQ%3D%3D" target="_blank">Usama Israr Khan</a></p>
     </div>
     <script src="main.js"></script>
 </body>
